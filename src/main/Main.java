@@ -1,15 +1,13 @@
 package main;
 
-import funcionalidad.Menu;
+import codigocontrol.MiniBaseDatos;
 
 public class Main {
 	
 	public static void main(String[] args) {
 		
-		String[] opciones = {"Nombre","Edad","Nacionalidad"};
-		
-		Menu menu = new Menu(opciones);
-		menu.showOptions();
+		MiniBaseDatos mbd = new MiniBaseDatos();
+		mbd.empezar();
 		
 	}
 
